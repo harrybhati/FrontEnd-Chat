@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import './App.css';
+import CombinedComponent from './Comp/CombinedComponent';
+import { BrowserRouter ,  Route, Routes} from 'react-router-dom';
+import SingIn from './Comp/SingIn';
+import LogIn from './Comp/LogIn';
+import ProtectedRoute from './Comp/ProtectedRoute';
+import Logout from './Comp/Logout';
+import Chat from './Comp/Chat';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className='app'>
+    <BrowserRouter>
+   
+    <Routes>
+<Route path='/' element={<SingIn/>}></Route>
+<Route path='/login' element={<LogIn/>}></Route>
+<Route path='/*' element={<LogIn/>}></Route>
+
+
+
+
+<Route element={<ProtectedRoute/>}>
+
+<Route path='/a' element={<h1> Jai Shree Ram</h1>}></Route>
+<Route path='/logout' element={<Logout/>}></Route>
+<Route path='/chatapp' element={<CombinedComponent/>}></Route>
+<Route path='/livechat' element={<Chat />} />
+
+</Route>
+
+   
+</Routes>
+    </BrowserRouter>
+
+
+   </div>
+    
+    
+   
+    
   );
 }
 

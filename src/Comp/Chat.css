@@ -1,0 +1,121 @@
+/* Chat container styling */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height */
+  width: 100%;
+  max-width: 800px; /* Max width for readability */
+  margin: 0 auto; /* Center horizontally */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  
+}
+
+/* Chat history styling */
+.chat-history {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 60px); /* Adjust based on the height of the input and button */
+  overflow-y: auto; /* Scrollbar for overflow */
+  padding: 10px;
+  background-color: #f9f9f9; /* Light background */
+  border-bottom: 1px solid #ddd; /* Border for separation */
+}
+
+
+/* Receiver name styling */
+.receiver-name {
+  font-weight: 1000; /* Slightly lighter than bold */
+  font-size: 1.5rem; /* Larger font size for prominence */
+  margin-bottom: 15px; /* Increased space below for better separation */
+  color: #2c3e50; /* Slightly lighter dark color for better readability */
+  text-align: center; /* Center align the text */
+  background-color: rgb(204, 166, 172);
+  width: 100%;
+  border-bottom: 2px solid #e0e0e0; /* Thin border for visual separation */
+  padding-bottom: 10px; /* Padding to ensure the text doesn't touch the border */
+}
+
+
+/* Message list styling */
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Message styling */
+.message {
+  display: flex;
+  flex-direction: column; /* Stack message and timestamp */
+  margin-bottom: 10px; /* Space between messages */
+}
+
+/* Styling for sent messages */
+.message.sent {
+  align-items: flex-end; /* Align sent messages to the right */
+}
+
+/* Styling for received messages */
+.message.received {
+  align-items: flex-start; /* Align received messages to the left */
+}
+
+/* Styling for message content */
+.message-content {
+  max-width: 60%; /* Limit width of message content */
+  padding: 10px;
+  border-radius: 8px;
+  color: #333; /* Dark text color */
+}
+
+/* Styling for sent messages content */
+.message.sent .message-content {
+  background-color: #007bff; /* Blue background for sent messages */
+  color: white; /* White text color */
+}
+
+/* Styling for received messages content */
+.message.received .message-content {
+  background-color: #e1ffc7; /* Light green background for received messages */
+  border: 1px solid #ddd; /* Light border around received messages */
+}
+
+/* Input and button container */
+div > div:last-child {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd; /* Border for separation */
+  background-color: #fff; /* Background color for input and button */
+}
+
+/* Input field styling */
+/* input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd; /* Border for input */
+  
+ */
+
+/* Button styling */
+button {
+  padding: 10px 20px 0px 10px;
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+#t{
+  width: 100px;
+    color: black;
+    background-color: lightblue;
+    padding: 10px;
+}
