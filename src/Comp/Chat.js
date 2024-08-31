@@ -42,6 +42,7 @@ function Chat() {
 
     try {
       const MessSend = await axios.post("https://chat-backend-1-x16o.onrender.com/ChatMess", {senderId,senderName,receiverId,receiverName,message: Mess});
+      console.log(MessSend);
       SetMess("");
       FetchHistory(); // Fetch updated chat history, when user send or receive 
     } catch (err) {
