@@ -20,7 +20,7 @@ function FriendDialog({ onClose }) { // onClose comes from the CombinedComponets
 
     if (key) { // here key means that if key value match any value from DB
       try {
-        const searchApi = await axios.get(`http://localhost:1000/user-search/${key}`);
+        const searchApi = await axios.get(`https://chat-backend-1-x16o.onrender.com/user-search/${key}`);
         const filteredData = searchApi.data.filter(user => user._id !== currentID); // is used to filter out the current user from the list of users returned by the search API
 
         if (filteredData.length === 0) {
