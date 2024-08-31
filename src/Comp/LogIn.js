@@ -18,7 +18,7 @@ function LogIn(){
 
              }
     try {
-        const response = await axios.post("http://localhost:1000/user", {email: email,password: pass});
+        const response = await axios.post("https://chat-backend-1-x16o.onrender.com/user", {email: email,password: pass});
 
         // console.log(response.data);
 
