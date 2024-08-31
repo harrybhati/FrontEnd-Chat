@@ -21,7 +21,7 @@ function SingIn() {
     }
 
     try {
-      const Resp = await axios.post("http://localhost:1000/register", {name: name,email: email,password: pass}); // post request to add data in db
+      const Resp = await axios.post("https://chat-backend-1-x16o.onrender.com/register", {name: name,email: email,password: pass}); // post request to add data in db
        console.log(Resp);
       // store data in local storage
       localStorage.setItem("user", JSON.stringify(Resp.data)); // Local storage only stores strings, so you need to serialize your data using JSON.stringify() before storing it.
