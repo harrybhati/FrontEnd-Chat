@@ -19,7 +19,7 @@ function CombinedComponent() {
         const userId = user._id;
 
         // Fetch the list of interacted users
-        const response = await axios.get(`http://localhost:1000/chatlive/${userId}`);
+        const response = await axios.get(`https://chat-backend-1-x16o.onrender.com/chatlive/${userId}`);
         
         console.log('Fetched data:', response.data); // Log the data to see its structure
 
