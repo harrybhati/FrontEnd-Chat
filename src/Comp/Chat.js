@@ -23,8 +23,9 @@ function Chat() {
   const receiverName = userName;
  // it is used when any reciver id or sender id rende the update the chat history 
   useEffect(() => {
-    FetchHistory();
-  }, [senderId, receiverId]);
+  FetchHistory();
+}, [FetchHistory, senderId, receiverId]);
+
 
   async function FetchHistory() {
     try {
