@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import './Chat.css'; // Import your CSS file
-import { click } from "@testing-library/user-event/dist/click";
+
 
 function Chat() {
   const [Mess, SetMess] = useState(''); // Enter value from user 
