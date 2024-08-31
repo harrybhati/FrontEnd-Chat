@@ -29,7 +29,7 @@ function Chat() {
   async function FetchHistory() {
     try {
       // it will fetch the only chat history between two users 
-      const Resp = await axios.get(`http://localhost:1000/ChatHistory/${senderId}/${receiverId}`);
+      const Resp = await axios.get(`https://chat-backend-1-x16o.onrender.com/${senderId}/${receiverId}`);
       SetChatHistory(Resp.data);
     } catch (err) {
       console.log("Error fetching chat history:", err);
@@ -41,7 +41,7 @@ function Chat() {
     if (Mess.trim() === "") return;// when no mess is enter and user click on send button 
 
     try {
-      const MessSend = await axios.post("http://localhost:1000/ChatMess", {senderId,senderName,receiverId,receiverName,message: Mess});
+      const MessSend = await axios.post("https://chat-backend-1-x16o.onrender.com/ChatMess", {senderId,senderName,receiverId,receiverName,message: Mess});
       SetMess("");
       FetchHistory(); // Fetch updated chat history, when user send or receive 
     } catch (err) {
