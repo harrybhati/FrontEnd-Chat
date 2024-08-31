@@ -1,4 +1,4 @@
-/* Live.css */
+
 
 .container {
   display: flex;
@@ -44,21 +44,21 @@
   background-color: #CC3333;
 }
 
-/* Chat List Styles */
+
 
 .chat-list {
-  /* Container styles */
+ 
   background-color: #F7F7F7;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  margin-top: 24px; /* Add some margin to separate from the buttons */
+  margin-top: 24px; 
   width: 100%;
 }
 
 .chat-list h2 {
-  /* Heading styles */
+  
   
     margin-left: 10px;
   margin-bottom: 5px;
@@ -68,14 +68,14 @@
 }
 
 .chat-list ul {
-  /* List styles */
+ 
   list-style: none;
   padding: 5px;
   margin: 0;
 }
 
 .chat-list li {
-  /* List item styles */
+ 
   background-color: #34C759;
   width: 100%;
   text-align: center;
@@ -88,17 +88,17 @@
 }
 
 .chat-list li:hover {
-  /* Hover effect */
+  
   background-color:#34C759;
 }
 
 .chat-list li:last-child {
-  /* Remove border from the last item */
+ 
   border-bottom: none;
 }
 
 .chat-list li span {
-  /* Text styles */
+  
   font-size: 18px;
   font-weight: bold;
   color: #555;

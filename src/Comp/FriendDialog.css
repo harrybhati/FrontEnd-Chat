@@ -96,7 +96,7 @@ Reset default styles
     background-color: #0056b3;
   }
   
-  /* Responsive Design */
+  
   @media (max-width: 768px) {
     .dialog-content {
       padding: 15px;

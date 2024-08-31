@@ -48,9 +48,7 @@ function Chat() {
       console.log("Error sending message:", err);
     }
   }
-  function click(){
-    alert("Button Pressed")
-  }
+  
 
   return (
     <div className="chat-container">

@@ -1,4 +1,4 @@
-/* Base styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,7 +25,7 @@ body {
     outline: none;
   }
   
-  /* Semantic styles */
+  
   .chat-list {
     padding: 20px;
     background-color: #f9f9f9;
@@ -57,7 +57,7 @@ body {
     background-color: #eee;
   }
   
-  /* Additional styles */
+ 
   .Add {
     margin: 20px;
   }
@@ -71,7 +71,7 @@ body {
     background-color: #c82333;
   }
   
-  /* Responsive styles */
+  
   @media (max-width: 768px) {
     .chat-list {
       padding: 10px;
